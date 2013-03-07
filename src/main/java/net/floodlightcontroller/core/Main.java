@@ -60,6 +60,7 @@ public class Main {
         IFloodlightProviderService controller =
                 moduleContext.getServiceImpl(IFloodlightProviderService.class);
         // This call blocks, it has to be the last line in the main
+        System.out.println("Test");
         controller.run();
     }
 }
